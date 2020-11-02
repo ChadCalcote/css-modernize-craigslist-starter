@@ -32,6 +32,7 @@ p.more {
 
 /*** Main Project Styles ***/
 
+/* Phase 1 */
 /* Universal selector */
 * {
   font-family: 'Helvetica Neue', sans-serif;
@@ -59,6 +60,7 @@ a {
   text-decoration: none;
 }
 
+/* Phase 2 *
 /* Psuedo classes */
 a > span:hover, a > a:hover
 {
@@ -66,6 +68,8 @@ color: #800080;
 font-weight: bold;
 }
 
+/* Phase 3 */
+/* Style the main page sections */
 .page-container {
 max-width: 1200px;
 }
@@ -82,4 +86,31 @@ footer {
 
 #leftbar, #rightbar {
 width: 25%;
+}
+
+#center {
+  width: 50%;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+
+#center > div {
+  float: left;
+  width: 33%;
+}
+
+#topban h2 {
+  text-align: center;
+}
+
+/* Phase 4 - Style The Footer */
+ul + .clfooter {
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 10px 0px 10px 0px;
+}
+
+ul.clfooter > li {
+  display: inline;
+  padding-right: 5px;
 }
