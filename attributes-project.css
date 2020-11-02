@@ -114,3 +114,8 @@ ul.clfooter > li {
   display: inline;
   padding-right: 5px;
 }
+
+/* Phase 5: Add Psuedo-Elements */
+h4.ban::before {
+content: "☮️";
+}
